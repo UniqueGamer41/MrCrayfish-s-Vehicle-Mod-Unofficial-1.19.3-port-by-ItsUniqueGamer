@@ -6,7 +6,9 @@ import com.mrcrayfish.vehicle.client.raytrace.MatrixTransform;
 import com.mrcrayfish.vehicle.client.raytrace.RayTraceTransforms;
 import com.mrcrayfish.vehicle.client.raytrace.TransformHelper;
 import com.mrcrayfish.vehicle.client.render.AbstractHelicopterRenderer;
+import com.mrcrayfish.vehicle.client.render.AbstractLandVehicleRenderer;
 import com.mrcrayfish.vehicle.client.render.Axis;
+import com.mrcrayfish.vehicle.entity.LandVehicleEntity;
 import com.mrcrayfish.vehicle.entity.properties.PoweredProperties;
 import com.mrcrayfish.vehicle.entity.properties.VehicleProperties;
 import com.mrcrayfish.vehicle.entity.vehicle.GolfCartEntity;
@@ -22,7 +24,7 @@ import javax.annotation.Nullable;
 /**
  * Author: MrCrayfish
  */
-public class GolfCartRenderer extends AbstractHelicopterRenderer<GolfCartEntity>
+public class GolfCartRenderer extends AbstractLandVehicleRenderer<GolfCartEntity>
 {
     public GolfCartRenderer(EntityType<GolfCartEntity> type)
     {
