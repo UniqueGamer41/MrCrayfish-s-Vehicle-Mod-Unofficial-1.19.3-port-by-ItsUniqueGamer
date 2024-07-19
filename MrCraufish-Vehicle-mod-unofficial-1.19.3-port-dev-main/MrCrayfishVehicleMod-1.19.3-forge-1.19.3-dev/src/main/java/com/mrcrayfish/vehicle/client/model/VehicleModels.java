@@ -29,7 +29,7 @@ public class VehicleModels
     public static final ComponentModel SPORTS_CAR_COSMETIC_STOCK_SPOILER = LOADER.create("item/sports_car/cosmetics/stock_spoiler");
 
     /* Shopping Cart */
-    public static final ComponentModel SHOPPING_CAR_BODY = LOADER.create("item/ShoppingCartBody");
+    public static final ComponentModel SHOPPING_CART_BODY = LOADER.create("item/shopping_cart_body");
 
     /* Mini Bus */
     public static final ComponentModel MINI_BUS_BODY = LOADER.create("item/minibus_body");
