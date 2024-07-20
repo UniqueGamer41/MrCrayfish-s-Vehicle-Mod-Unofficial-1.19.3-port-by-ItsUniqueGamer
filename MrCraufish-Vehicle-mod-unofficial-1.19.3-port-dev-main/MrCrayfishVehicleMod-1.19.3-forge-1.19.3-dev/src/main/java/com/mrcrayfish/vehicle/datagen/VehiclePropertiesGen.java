@@ -517,14 +517,12 @@ public class VehiclePropertiesGen extends VehiclePropertiesProvider
                 .addSeat(Seat.of(0.0, 7.0, -4.0, true))
                 .setCamera(CameraProperties.builder()
                         .setDistance(5.0))
-                .setCanBePainted(true)
                 .addExtended(PoweredProperties.builder()
                         .setEngineType(EngineType.NONE)
                         .setFrontAxleOffset(9.5)
                         .setRearAxleOffset(-10.5)
                         .setMaxSteeringAngle(33F)
-                        .build())
-        );
+                        .build()));
 
         this.add(ModEntities.SPORTS_CAR.get(), VehicleProperties.builder()
                 .setCanChangeWheels(true)
