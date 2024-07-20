@@ -2,12 +2,12 @@
   "__comment": "Model generated using MrCrayfish's Model Creator (https://mrcrayfish.com/tools?id=mc)",
   "textures": {
     "plastic_frame": "minecraft:block/light_gray_concrete",
-    "plastic_mesh_two": "vehicle:model/mesh_angled",
-    "metal_mesh": "vehicle:model/white_mesh",
+    "plastic_mesh_two": "vehicle:item/mesh_angled",
+    "metal_mesh": "vehicle:item/white_mesh",
     "metal": "minecraft:block/white_concrete",
-    "logo": "vehicle:model/cray_industries",
-    "plastic_mesh_one": "vehicle:model/mesh_angled_flipped",
-    "plastic_mesh_three": "vehicle:model/mesh"
+    "logo": "vehicle:item/cray_industries",
+    "plastic_mesh_one": "vehicle:item/mesh_angled_flipped",
+    "plastic_mesh_three": "vehicle:item/mesh"
   },
   "elements": [
     {
