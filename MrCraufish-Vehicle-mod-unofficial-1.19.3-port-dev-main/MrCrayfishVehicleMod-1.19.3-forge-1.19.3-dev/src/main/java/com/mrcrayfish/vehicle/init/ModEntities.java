@@ -42,6 +42,7 @@ public class ModEntities
     public static final RegistryObject<EntityType<MiniBusEntity>> MINI_BUS = register("mini_bus", MiniBusEntity::new, 2.0F, 2.0F);
     public static final RegistryObject<EntityType<DirtBikeEntity>> DIRT_BIKE = register("dirt_bike", DirtBikeEntity::new, 1.0F, 1.5F);
     public static final RegistryObject<EntityType<CompactHelicopterEntity>> COMPACT_HELICOPTER = register("compact_helicopter", CompactHelicopterEntity::new, 2.0F, 2.0F);
+    public static final RegistryObject<EntityType<BumperCarEntity>> BUMPER_CAR = register("bumper_car", BumperCarEntity::new, 1.5F, 1.0F);
 
     /* Trailers */
     public static final RegistryObject<EntityType<VehicleTrailerEntity>> VEHICLE_TRAILER = register("vehicle_trailer", VehicleTrailerEntity::new, 1.5F, 0.75F);

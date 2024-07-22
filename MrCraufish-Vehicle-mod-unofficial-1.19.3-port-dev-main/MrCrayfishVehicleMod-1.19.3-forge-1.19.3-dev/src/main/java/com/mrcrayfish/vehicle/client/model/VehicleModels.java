@@ -30,6 +30,13 @@ public class VehicleModels
 
     /* Shopping Cart */
     public static final ComponentModel SHOPPING_CART_BODY = LOADER.create("item/shopping_cart_body");
+    public static final ComponentModel ATV_BODY = LOADER.create("item/atv_body");
+    public static final ComponentModel ATV_HANDLES = LOADER.create("item/atv_handles");
+
+
+    /* Bumper car */
+    public static final ComponentModel BUMPER_CAR_BODY = LOADER.create("item/bumper_car_body");
+
 
     /* Mini Bus */
     public static final ComponentModel MINI_BUS_BODY = LOADER.create("item/minibus_body");
@@ -61,7 +68,7 @@ public class VehicleModels
     public static final ComponentModel QUAD_BIKE_HANDLES = LOADER.create("item/quad_bike_handles");
 
     /* Go Kart */
-    public static final ComponentModel GO_KART_BODY = LOADER.create("item/go_kart/base");
+    public static final ComponentModel GO_KART_BODY = LOADER.create("item/go_kart_base");
     public static final ComponentModel GO_KART_STEERING_WHEEL = LOADER.create("item/steering_wheel");
 
     /* Sports Plane */

@@ -595,6 +595,8 @@ public class VehiclePropertiesGen extends VehiclePropertiesProvider
                         .setOffset(0, 14.0, 0)));
 
 
+
+
         this.add(ModEntities.SPORTS_PLANE.get(), VehicleProperties.builder()
                 .setBodyTransform(Transform.create(0.0, 0.0, -8.0, 1.0))
                 .setDisplayTransform(Transform.create(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.85))
@@ -699,6 +701,57 @@ public class VehiclePropertiesGen extends VehiclePropertiesProvider
                         .setRenderEngine(true)
                         .setEngineSound(ModSounds.ENTITY_TRACTOR_ENGINE.getId())
                         .build()));
+
+        this.add(ModEntities.BUMPER_CAR.get(), VehicleProperties.builder()
+                .setAxleOffset(-1.5F)
+                .setDisplayTransform(Transform.create(1.25))
+                .setBodyTransform(Transform.create(1.2))
+                .setHeldOffset(6.0, 0.0, 0.0)
+                .setTrailerOffset(0.0, -0.03125, -0.5625)
+                .addWheel(Wheel.builder()
+                        .setSide(Wheel.Side.LEFT)
+                        .setPosition(Wheel.Position.FRONT)
+                        .setOffset(7.0, 0.0, 8.5)
+                        .setScale(0.47))
+                .addWheel(Wheel.builder()
+                        .setSide(Wheel.Side.RIGHT)
+                        .setPosition(Wheel.Position.FRONT)
+                        .setOffset(7.0, 0.0, 8.5)
+                        .setScale(0.47))
+                .addWheel(Wheel.builder()
+                        .setSide(Wheel.Side.LEFT)
+                        .setPosition(Wheel.Position.REAR)
+                        .setOffset(7.0, 0.0F, -8.5)
+                        .setScale(0.47))
+                .addWheel(Wheel.builder()
+                        .setSide(Wheel.Side.RIGHT)
+                        .setPosition(Wheel.Position.REAR)
+                        .setOffset(7.0, 0.0F, -8.5)
+                        .setScale(0.47))
+                .addSeat(Seat.of(0.0, 1.0, -6.0, true))
+                .setCanChangeWheels(true)
+                .setCanBePainted(true)
+                .setCanFitInTrailer(false)
+                .setCamera(CameraProperties.builder()
+                        .setDistance(5.0))
+                .addExtended(PoweredProperties.builder()
+                        .setEngineType(EngineType.ELECTRIC_MOTOR)
+//                        .setEnginePower(8F)
+//                        .setMinEnginePitch(0.8F)
+//                        .setMaxEnginePitch(1.6F)
+//                        .setEngineTransform(Transform.create(0.0, 6.0, 7.5, 0.0, 0.0, 0.0, 0.85))
+//                        .setFuelFillerTransform(Transform.create(-6.0, 12.0, -0.5, 0.0, -90, 0.0, 0.6))
+//                        .setIgnitionTransform(Transform.create(-2.75, 12.0, -1.75, -45.0, 0.0, 0.0, 0.5))
+//                        .setFrontAxleOffset(14.0)
+//                        .setRearAxleOffset(-14.5)
+//                        .setShowExhaustFumes(true)
+//                        .setExhaustFumesPosition(-2, 32, 16) //TODO test this
+//                        .setRenderEngine(true)
+//                        .setEngineSound(ModSounds.ENTITY_TRACTOR_ENGINE.getId())
+                        .setFrontAxleOffset(8.5)
+                        .setRearAxleOffset(-8.5)
+                        .build()));
+
 
         this.add(ModEntities.FERTILIZER.get(), VehicleProperties.builder()
                 .setAxleOffset(-0.5F)

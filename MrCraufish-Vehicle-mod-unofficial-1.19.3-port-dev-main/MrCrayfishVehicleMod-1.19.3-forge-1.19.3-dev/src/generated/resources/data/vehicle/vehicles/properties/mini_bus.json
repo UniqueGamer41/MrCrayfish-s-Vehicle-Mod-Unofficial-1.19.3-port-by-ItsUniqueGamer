@@ -124,17 +124,18 @@
       "engineSound": "vehicle:entity.mini_bus.engine",
       "engineType": "vehicle:large_motor",
       "frontAxleOffset": 13.5,
+
       "fuelFillerTransform": {
         "rotation": [
-          0.0,
-          -90.0,
-          0.0
+          -8.0,
+          6.0,
+          -8.0
         ],
-        "scale": 0.5,
+        "scale": 0.0,
         "translate": [
-          -12.0,
-          10.0,
-          -8.75
+          -90.0,
+          0.0,
+          0.25
         ]
       },
       "ignitionTransform": {
