@@ -33,7 +33,7 @@ public class BumperCarRenderer extends AbstractLandVehicleRenderer<BumperCarEnti
     protected void render(@Nullable BumperCarEntity vehicle, PoseStack matrixStack, MultiBufferSource renderTypeBuffer, float partialTicks, int light)
     {
         this.renderDamagedPart(vehicle, VehicleModels.BUMPER_CAR_BODY, matrixStack, renderTypeBuffer, light, partialTicks);
-        //this.renderSteeringWheel(vehicle, VehicleModels.GO_KART_STEERING_WHEEL, -5.0, 4.9039, 15.6378, 0.7F, -67.5F, matrixStack, renderTypeBuffer, light, partialTicks);
+        this.renderSteeringWheel(vehicle, VehicleModels.GO_KART_STEERING_WHEEL, 6.3431, 7.0, 7.375, 0.7F, 0.0F, matrixStack, renderTypeBuffer, light, partialTicks);
     }
 
     @Override
@@ -63,10 +63,12 @@ public class BumperCarRenderer extends AbstractLandVehicleRenderer<BumperCarEnti
         {
             TransformHelper.createTransformListForPart(VehicleModels.BUMPER_CAR_BODY, parts, transforms);
             TransformHelper.createTransformListForPart(VehicleModels.GO_KART_STEERING_WHEEL, parts, transforms,
-                    MatrixTransform.translate(0.0F, 0.2F, 0.0F),
-                    MatrixTransform.rotate(Axis.POSITIVE_X.rotationDegrees(-45)),
-                    MatrixTransform.translate(0.0F, -0.2F, 0.0F),
-                    MatrixTransform.scale(0.9F));
+                    MatrixTransform.translate(-1.6569F, -4.0F, -0.5F),
+                    MatrixTransform.rotate(Axis.POSITIVE_X.rotationDegrees(0F)),
+                    MatrixTransform.rotate(Axis.POSITIVE_Y.rotationDegrees(0F)),
+                    MatrixTransform.rotate(Axis.POSITIVE_Z.rotationDegrees(0F)),
+                    MatrixTransform.translate(1.6569F, 4.0F, 0.5F),
+                    MatrixTransform.scale(0.7F));
             TransformHelper.createFuelFillerTransforms(ModEntities.BUMPER_CAR.get(), VehicleModels.FUEL_DOOR_CLOSED, parts, transforms);
         };
     }
