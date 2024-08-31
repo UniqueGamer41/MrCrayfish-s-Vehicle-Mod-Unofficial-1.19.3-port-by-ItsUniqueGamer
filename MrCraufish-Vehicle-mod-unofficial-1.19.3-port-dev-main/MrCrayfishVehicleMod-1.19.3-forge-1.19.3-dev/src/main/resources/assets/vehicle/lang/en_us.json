@@ -102,7 +102,7 @@
     "entity.vehicle.tractor": "Tractor",
     "entity.vehicle.mini_bus": "Mini Bus",
     "entity.vehicle.dirt_bike": "Dirt Bike",
-
+    "entity.vehicle.bumper_car": "Bumper Car",
     "vehicle.config.title": "MrCrayfish's Vehicle Mod Config",
     "vehicle.config.client": "Client",
     "vehicle.config.client.tooltip": "Client-only configs",
