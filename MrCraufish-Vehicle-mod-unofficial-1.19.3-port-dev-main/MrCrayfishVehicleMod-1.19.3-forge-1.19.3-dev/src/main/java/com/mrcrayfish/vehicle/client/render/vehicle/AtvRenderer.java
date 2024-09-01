@@ -46,7 +46,7 @@ public class AtvRenderer extends AbstractLandVehicleRenderer<AtvEntity>
 //            matrixStack.mulPose(Axis.POSITIVE_Y.rotationDegrees(turnRotation));
 //        }
 
-        //this.renderSteeringWheel(VehicleModels.ATV_HANDLES, ItemCameraTransforms.TransformType.NONE, false, matrixStack, renderTypeBuffer, this.colorProperty.get(vehicle), light, OverlayTexture.NO_OVERLAY);
+        this.renderSteeringWheel(vehicle, VehicleModels.ATV_HANDLES, 1.0, 0.75, -3.3375, 0.7F, -45F, matrixStack, renderTypeBuffer, light, partialTicks);
 
         matrixStack.popPose();
     }
