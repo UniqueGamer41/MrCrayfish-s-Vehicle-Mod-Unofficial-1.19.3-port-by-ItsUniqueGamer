@@ -8,28 +8,26 @@ import com.mrcrayfish.vehicle.client.render.AbstractLandVehicleRenderer;
 import com.mrcrayfish.vehicle.client.render.Axis;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mrcrayfish.vehicle.entity.properties.VehicleProperties;
-import com.mrcrayfish.vehicle.entity.vehicle.ATVEntity;
-import com.mrcrayfish.vehicle.init.ModEntities;
+import com.mrcrayfish.vehicle.entity.vehicle.AtvEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.client.model.PlayerModel;
-import com.mrcrayfish.vehicle.entity.PoweredVehicleEntity;
 
 import javax.annotation.Nullable;
 
 /**
  * Author: MrCrayfish
  */
-public class ATVRenderer extends AbstractLandVehicleRenderer<ATVEntity>
+public class AtvRenderer extends AbstractLandVehicleRenderer<AtvEntity>
 {
-    public ATVRenderer(EntityType<ATVEntity> type)
+    public AtvRenderer(EntityType<AtvEntity> type)
     {
         super(type, () -> VehicleProperties.get(type));
     }
 
     @Override
-    protected void render(@Nullable ATVEntity vehicle, PoseStack matrixStack, MultiBufferSource renderTypeBuffer, float partialTicks, int light)
+    protected void render(@Nullable AtvEntity vehicle, PoseStack matrixStack, MultiBufferSource renderTypeBuffer, float partialTicks, int light)
     {
         //Body
         this.renderDamagedPart(vehicle, VehicleModels.ATV_BODY, matrixStack, renderTypeBuffer, light, partialTicks);
@@ -54,7 +52,7 @@ public class ATVRenderer extends AbstractLandVehicleRenderer<ATVEntity>
     }
 
     @Override
-    public void applyPlayerModel(ATVEntity entity, Player player, PlayerModel<?> model, float partialTicks)
+    public void applyPlayerModel(AtvEntity entity, Player player, PlayerModel<?> model, float partialTicks)
     {
         float wheelAngle = this.wheelAngleProperty.get(entity, partialTicks);
         float wheelAngleNormal = wheelAngle / 45F;

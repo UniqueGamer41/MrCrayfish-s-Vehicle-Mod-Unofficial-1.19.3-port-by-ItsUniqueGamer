@@ -146,6 +146,7 @@ public class ClientHandler
         VehicleUtil.registerVehicleRenderer(event, ModEntities.DIRT_BIKE.get(), DirtBikeRenderer::new);
         VehicleUtil.registerVehicleRenderer(event, ModEntities.COMPACT_HELICOPTER.get(), CompactHelicopterRenderer::new);
         VehicleUtil.registerVehicleRenderer(event, ModEntities.BUMPER_CAR.get(), BumperCarRenderer::new);
+        VehicleUtil.registerVehicleRenderer(event, ModEntities.ATV.get(), AtvRenderer::new);
 
         /* Register Trailers */
         VehicleUtil.registerVehicleRenderer(event, ModEntities.VEHICLE_TRAILER.get(), VehicleTrailerRenderer::new);

@@ -4,7 +4,7 @@ import com.mrcrayfish.vehicle.entity.LandVehicleEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;
 
-public class ATVEntity extends LandVehicleEntity
+public class AtvEntity extends LandVehicleEntity
 {
-    public ATVEntity(EntityType<? extends ATVEntity> type, Level worldIn) {super(type, worldIn);}
+    public AtvEntity(EntityType<? extends AtvEntity> type, Level worldIn) {super(type, worldIn);}
 }

@@ -21,6 +21,7 @@ import com.mrcrayfish.vehicle.init.ModSounds;
 import com.mrcrayfish.vehicle.util.Axis;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.fml.common.Mod;
 
 /**
  * Author: MrCrayfish
@@ -647,6 +648,43 @@ public class VehiclePropertiesGen extends VehiclePropertiesProvider
                         .addAction(new RotateAction(RotateActionSourceRegistry.PROPELLER, Axis.Z, 1.0F))
                         .build())
         );
+
+        this.add(ModEntities.ATV.get(), VehicleProperties.builder()
+                .setAxleOffset(-1.5F)
+                .setBodyTransform(Transform.create(1.25))
+                .setHeldOffset(4.0, 3.5,00.0)
+                .setTowBarPosition(0.0,0.0,-20.8)
+                .setTrailerOffset(0.0,0.0,-0.55)
+                .setDisplayTransform(Transform.create(1.5))
+                .addWheel(Wheel.builder()
+                        .setSide(Wheel.Side.LEFT)
+                        .setPosition(Wheel.Position.FRONT)
+                        .setOffset(4.0, 0.0, 10.5)
+                        .setScale(1.15625)
+                        .setParticles(true))
+                .addWheel(Wheel.builder()
+                        .setSide(Wheel.Side.RIGHT)
+                        .setPosition(Wheel.Position.FRONT)
+                        .setOffset(4.0, 0.0, 10.5)
+                        .setScale(1.15625)
+                        .setParticles(true))
+                .addWheel(Wheel.builder()
+                        .setSide(Wheel.Side.LEFT)
+                        .setPosition(Wheel.Position.REAR)
+                        .setOffset(4.0, 0.0, -10.5)
+                        .setScale(1.15625)
+                        .setParticles(true))
+                .addWheel(Wheel.builder()
+                        .setSide(Wheel.Side.RIGHT)
+                        .setPosition(Wheel.Position.REAR)
+                        .setOffset(4.0, 0.0, -10.5)
+                        .setScale(1.15625)
+                        .setParticles(true))
+                .addExtended(PoweredProperties.builder()
+                        .setEngineType(EngineType.SMALL_MOTOR)
+                        .setFrontAxleOffset(10.5)
+                        .setRearAxleOffset(-10.5).build()));
+
 
         this.add(ModEntities.TRACTOR.get(), VehicleProperties.builder()
                 .setAxleOffset(-3.0F)
