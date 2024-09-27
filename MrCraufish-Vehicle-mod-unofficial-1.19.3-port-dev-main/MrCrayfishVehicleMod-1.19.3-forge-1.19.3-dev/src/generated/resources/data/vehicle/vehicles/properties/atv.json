@@ -16,7 +16,7 @@
       "maxEnginePitch": 1.6,
       "minEnginePitch": 0.8,
       "rearAxleOffset": -10.5,
-      "renderEngine": true,
+      "renderEngine": false,
       "showExhaustFumes": true
     }
   },
@@ -39,7 +39,7 @@
   "towBarOffset": [
     0.0,
     0.0,
-    -24.5
+    -10.5
   ],
   "wheels": [
     {
