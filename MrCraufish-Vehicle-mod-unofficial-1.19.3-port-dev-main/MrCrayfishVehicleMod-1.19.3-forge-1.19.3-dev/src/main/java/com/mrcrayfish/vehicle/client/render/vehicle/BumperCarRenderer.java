@@ -33,7 +33,7 @@ public class BumperCarRenderer extends AbstractLandVehicleRenderer<BumperCarEnti
     protected void render(@Nullable BumperCarEntity vehicle, PoseStack matrixStack, MultiBufferSource renderTypeBuffer, float partialTicks, int light)
     {
         this.renderDamagedPart(vehicle, VehicleModels.BUMPER_CAR_BODY, matrixStack, renderTypeBuffer, light, partialTicks);
-        this.renderSteeringWheel(vehicle, VehicleModels.GO_KART_STEERING_WHEEL, 1.0, 2.75, -3.3375, 0.7F, -19F, matrixStack, renderTypeBuffer, light, partialTicks);
+        this.renderSteeringWheel(vehicle, VehicleModels.GO_KART_STEERING_WHEEL, -0.0, 3.75, -0.3375, 0.7F, -20F, matrixStack, renderTypeBuffer, light, partialTicks);
     }
 
     @Override
