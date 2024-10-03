@@ -88,7 +88,7 @@ public class DuneBuggyRenderer extends AbstractLandVehicleRenderer<DuneBuggyEnti
     @Override
     public void applyPlayerModel(DuneBuggyEntity entity, Player player, PlayerModel<?> model, float partialTicks)
     {
-        float wheelAngle = entity.prevRenderWheelAngle + (entity.renderWheelAngle - entity.prevRenderWheelAngle) * partialTicks;
+        float wheelAngle = this.wheelAngleProperty.get(entity, partialTicks);
         float wheelAngleNormal = wheelAngle / 45F;
         float turnRotation = wheelAngleNormal * 8F;
         model.rightArm.xRot = (float) Math.toRadians(-50F - turnRotation);
@@ -108,7 +108,7 @@ public class DuneBuggyRenderer extends AbstractLandVehicleRenderer<DuneBuggyEnti
             TransformHelper.createTransformListForPart(VehicleModels.DUNE_BUGGY_BODY, parts, transforms);
             TransformHelper.createTransformListForPart(VehicleModels.DUNE_BUGGY_HANDLES, parts, transforms,
                     MatrixTransform.translate(0.0F, 0.0F, -0.0046875F));
-            TransformHelper.createFuelFillerTransforms(ModEntities.DUNE_BUGGY.get(), VehicleModels.FUEL_DOOR_CLOSED, parts, transforms);
+            //TransformHelper.createFuelFillerTransforms(ModEntities.DUNE_BUGGY.get(), VehicleModels.FUEL_DOOR_CLOSED, parts, transforms);
         };
     }
 }
