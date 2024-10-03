@@ -33,6 +33,9 @@ public class VehicleModels
     public static final ComponentModel ATV_BODY = LOADER.create("item/atv_body");
     public static final ComponentModel ATV_HANDLES = LOADER.create("item/atv_handles");
 
+    public static final ComponentModel DUNE_BUGGY_BODY = LOADER.create("item/dune_buggy_body");
+    public static final ComponentModel DUNE_BUGGY_HANDLES = LOADER.create("item/dune_buggy_handles");
+
 
     /* Bumper car */
     public static final ComponentModel BUMPER_CAR_BODY = LOADER.create("item/bumper_car_body");
@@ -60,8 +63,8 @@ public class VehicleModels
     public static final ComponentModel MOPED_COSMETIC_STOCK_FRONT_LIGHT = LOADER.create("item/moped/cosmetics/stock_front_light");
 
     /* Dirt Bike */
-    public static final ComponentModel DIRT_BIKE_BODY = LOADER.create("item/dirt_bike/body");
-    public static final ComponentModel DIRT_BIKE_HANDLES = LOADER.create("item/dirt_bike/handles");
+    public static final ComponentModel DIRT_BIKE_BODY = LOADER.create("item/dirt_bike_body");
+    public static final ComponentModel DIRT_BIKE_HANDLES = LOADER.create("item/dirt_bike_handles");
 
     /* Quad Bike */
     public static final ComponentModel QUAD_BIKE_BODY = LOADER.create("item/quad_bike_base");
