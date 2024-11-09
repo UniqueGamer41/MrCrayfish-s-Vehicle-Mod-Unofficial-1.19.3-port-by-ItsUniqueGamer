@@ -44,7 +44,7 @@ public class SofaHelicopterRenderer extends AbstractHelicopterRenderer<Sofacopte
         matrixStack.translate(0.0, 32 * 0.0625, 0.0);
         matrixStack.mulPose(Vector3f.YP.rotationDegrees(this.bladeRotationProperty.get(vehicle, partialTicks)));
         matrixStack.scale(1.5F, 1.5F, 1.5F);
-        this.renderDamagedPart(vehicle, VehicleModels.SPORTS_PLANE_WING, matrixStack, renderTypeBuffer, light, partialTicks);
+        this.renderDamagedPart(vehicle, VehicleModels.SPORTS_PLANE_WINGS, matrixStack, renderTypeBuffer, light, partialTicks);
         matrixStack.popPose();
 
        /* GlStateManager.pushMatrix();
@@ -75,8 +75,8 @@ public class SofaHelicopterRenderer extends AbstractHelicopterRenderer<Sofacopte
                     MatrixTransform.rotate(Axis.POSITIVE_Y.rotationDegrees(90F)));
             TransformHelper.createTransformListForPart(VehicleModels.SOFA_HELICOPTER_ARM, parts, transforms,
                     MatrixTransform.translate(0.0F, 8 * 0.0625F, 0.0F));
-            TransformHelper.createFuelFillerTransforms(ModEntities.SOFACOPTER.get(), VehicleModels.FUEL_DOOR_CLOSED, parts, transforms);
-            TransformHelper.createIgnitionTransforms(ModEntities.SOFACOPTER.get(), parts, transforms);
+            //TransformHelper.createFuelFillerTransforms(ModEntities.SOFACOPTER.get(), VehicleModels.FUEL_DOOR_CLOSED, parts, transforms);
+            //TransformHelper.createIgnitionTransforms(ModEntities.SOFACOPTER.get(), parts, transforms);
         };
     }
 }

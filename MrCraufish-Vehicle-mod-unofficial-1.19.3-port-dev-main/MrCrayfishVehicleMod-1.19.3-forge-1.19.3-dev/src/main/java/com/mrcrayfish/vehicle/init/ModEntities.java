@@ -50,9 +50,10 @@ public class ModEntities
     public static final RegistryObject<EntityType<FluidTrailerEntity>> FLUID_TRAILER = register("fluid_trailer", FluidTrailerEntity::new, 1.5F, 1.5F);
     public static final RegistryObject<EntityType<SeederTrailerEntity>> SEEDER = register("seeder", SeederTrailerEntity::new, 1.5F, 1.0F);
     public static final RegistryObject<EntityType<FertilizerTrailerEntity>> FERTILIZER = register("fertilizer", FertilizerTrailerEntity::new, 1.5F, 1.0F);
+    public static final RegistryObject<EntityType<DuneBuggyEntity>> DUNE_BUGGY = register("dune_buggy", DuneBuggyEntity::new, 0.75F, 0.75F);
 
     /* Special Vehicles */
-    public static final RegistryObject<EntityType<SofacopterEntity>> SOFACOPTER = registerDependant("sofacopter", "cfm", SofacopterEntity::new, 1.0F, 1.0F, false);
+    public static final RegistryObject<EntityType<SofacopterEntity>> SOFACOPTER = registerDependant("sofacopter", "cfm", SofacopterEntity::new, 1.0F, 1.0F, true);
 
     /* Other */
     public static final RegistryObject<EntityType<EntityJack>> JACK = REGISTER.register("jack", () -> EntityType.Builder.of((EntityType.EntityFactory<EntityJack>) EntityJack::new, MobCategory.MISC).setUpdateInterval(1).noSummon().fireImmune().sized(0F, 0F).setShouldReceiveVelocityUpdates(true).build("jack")); //registerEntity("jack", EntityJack::new, 0.0F, 0.0F);

@@ -1,4 +1,5 @@
 {
+  "canChangeWheels": true,
   "bodyTransform": {
     "translate": [
       0.0,

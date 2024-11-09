@@ -34,6 +34,8 @@ public class VehicleModels
     public static final ComponentModel ATV_BODY = LOADER.create("item/atv_body");
     public static final ComponentModel ATV_HANDLES = LOADER.create("item/atv_handles");
 
+    public static final ComponentModel ALLUMINUM_BOAT_BODY = LOADER.create("item/aluminum_boat_body");
+
     public static final ComponentModel DUNE_BUGGY_BODY = LOADER.create("item/dune_buggy_body");
     public static final ComponentModel DUNE_BUGGY_HANDLES = LOADER.create("item/dune_buggy_handles");
 
@@ -77,7 +79,7 @@ public class VehicleModels
 
     /* Sports Plane */
     public static final ComponentModel SPORTS_PLANE_BODY = LOADER.create("item/sports_plane/base");
-    public static final ComponentModel SPORTS_PLANE_WINGS = LOADER.create("item/sports_plane/cosmetics/wings");
+    public static final ComponentModel SPORTS_PLANE_WINGS = LOADER.create("item/sports_plane_wings");
     public static final ComponentModel SPORTS_PLANE_SEAT = LOADER.create("item/sports_plane/cosmetics/seat");
     public static final ComponentModel SPORTS_PLANE_PROPELLER = LOADER.create("item/sports_plane/cosmetics/propeller");
     public static final ComponentModel SPORTS_PLANE_LEFT_AILERON = LOADER.create("item/sports_plane/cosmetics/left_aileron");

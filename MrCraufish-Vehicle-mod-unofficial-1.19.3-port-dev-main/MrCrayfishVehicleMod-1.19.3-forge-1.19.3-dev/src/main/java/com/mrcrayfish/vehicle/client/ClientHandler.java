@@ -154,6 +154,7 @@ public class ClientHandler
         VehicleUtil.registerVehicleRenderer(event, ModEntities.FLUID_TRAILER.get(), FluidTrailerRenderer::new);
         VehicleUtil.registerVehicleRenderer(event, ModEntities.SEEDER.get(), SeederTrailerRenderer::new);
         VehicleUtil.registerVehicleRenderer(event, ModEntities.FERTILIZER.get(), FertilizerTrailerRenderer::new);
+        VehicleUtil.registerVehicleRenderer(event, ModEntities.DUNE_BUGGY.get(), DuneBuggyRenderer::new);
 
         /* Register Mod Exclusive Vehicles */
 //        if(ModList.get().isLoaded("cfm"))
